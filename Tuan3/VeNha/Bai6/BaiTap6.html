@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio – Bài tập 6</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #222;
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .portfolio {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .portfolio-header {
+      padding: 28px 16px 32px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    .portfolio h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .portfolio h2::after {
+      content: "";
+      display: block;
+      width: 64px;
+      height: 2px;
+      margin: 14px auto 0;
+      background-color: #26999c;
+    }
+
+    .list-tab,
+    .galerry {
+      padding: 0;
+      list-style: none;
+    }
+
+    .list-tab {
+      margin: 22px 0 0;
+    }
+
+    .list-tab li {
+      display: inline-block;
+      margin: 4px 8px;
+    }
+
+    .list-tab a {
+      color: #555;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .list-tab li:first-child a,
+    .list-tab a:hover,
+    .list-tab a:focus-visible {
+      color: #187b7e;
+    }
+
+    .galerry {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin: 0;
+      padding: 8px;
+    }
+
+    .galerry li {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 350 / 260;
+      padding: 12px;
+      color: #f0f7e9;
+      background-color: #9acb77;
+      font-size: clamp(16px, 2.8vw, 28px);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .galerry {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="portfolio" aria-labelledby="portfolio-title">
+    <header class="portfolio-header">
+      <h2 id="portfolio-title">MY PORTFOLIO</h2>
+
+      <ul class="list-tab">
+        <li><a href="#gallery">All</a></li>
+        <li><a href="#gallery">Web App</a></li>
+        <li><a href="#gallery">UI/UX</a></li>
+        <li><a href="#gallery">Graphics Design</a></li>
+        <li><a href="#gallery">Mobile App</a></li>
+        <li><a href="#gallery">Branding</a></li>
+        <li><a href="#gallery">Marketing</a></li>
+      </ul>
+    </header>
+
+    <ul class="galerry" id="gallery">
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+      <li>Học Web Chuẩn</li>
+    </ul>
+  </section>
+</body>
+</html>

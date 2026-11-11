@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập CSS – Tuần 3</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f5f9;
+      color: #17263a;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(16px, 4vw, 32px);
+      background: white;
+      border: 1px solid #dbe3ec;
+      border-radius: 16px;
+    }
+    h1, h2 { line-height: 1.25; }
+    ul { list-style: none; padding: 0; }
+    li + li { margin-top: 8px; }
+    li a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: #174d88;
+      background: #edf4fc;
+    }
+    li a:hover, li a:focus-visible { background: #dbeafe; }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Bài tập CSS – Tuần 3</h1>
+      <!-- Xóa dấu chú thích quanh dòng ảnh sau khi thêm tệp avatar.jpg. -->
+      <!-- <img class="avatar" src="avatar.jpg" alt="Ảnh cá nhân"> -->
+      <p>Họ và tên: Trần Lâm Huy</p>
+      <p>Mã số sinh viên: 31241023748</p>
+      <p>GitHub: [Thêm liên kết đến hồ sơ GitHub]</p>
+    </header>
+    <section aria-labelledby="exercises">
+      <h2 id="exercises">Danh sách bài tập</h2>
+      <p>Bài 3 chọn phương án 3b và được thực hiện qua Bài 4 đến Bài 7.</p>
+      <ul>
+      <li><a href="Bai1/BaiTap1.html">Bài 1 · CSS Diner và CSS Speedrun</a></li>
+      <li><a href="Bai2/BaiTap2.html">Bài 2 · Định dạng CSS cơ bản</a></li>
+      <li><a href="Bai4/BaiTap4.html">Bài 4 · Menu điều hướng</a></li>
+      <li><a href="Bai5/BaiTap5.html">Bài 5 · Shared Hosting và Font Awesome (Bài 9)</a></li>
+      <li><a href="Bai6/BaiTap6.html">Bài 6 · My Portfolio</a></li>
+      <li><a href="Bai7/BaiTap7.html">Bài 7 · Bố cục trang</a></li>
+      <li><a href="Bai8/BaiTap8.html">Bài 8 · Heroes of JavaScript and HTML</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
